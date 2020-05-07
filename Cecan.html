@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+	<head>
+		<title>Top 10 Cecan di FL ku :v</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scable=no">
+		<meta name="MobileOptimized" content="width">
+		<meta name="author" content="Hardiansyah">
+		<link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round|Roboto|Nanum+Gothic|Hind&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style type="text/css">
+		body {
+			margin: 0px;
+			padding: 0px;
+			background: whitesmoke;
+			backface-visibility: hidden;
+			-o-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+		}
+		.cari {
+			bottom: 0px;
+			left: 0px;
+			display: block;
+			position: fixed;
+			z-index: 10;
+			width: 70%;
+			margin: 8px 8px;
+			padding: 10px 8px;
+			color: #3169B3;
+			font-size: 16px;
+			font-weight: normal;
+			font-family: "Varela+Round", sans-serif;
+			background: whitesmoke;
+			border: 0px;
+			border-radius: 12px;
+			outline: 0px;
+			box-shadow: 0px 0px 4px #666;
+			-o-box-shadow: 0px 0px 4px #666;
+			-webkit-box-shadow: 0px 0px 4px #666;
+		}
+		.cecan i, i {
+			font-size: normal;
+			transition: 0.8s;
+			-webkit-transition: 0.8s;
+		}
+		li {
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		.cecan {
+			display: block;
+			margin: 0px auto;
+			margin-top: 26px;
+			padding: 8px 8px;
+			width: 85%;
+			height: auto;
+			text-align: center;
+			background: white;
+			border-radius: 15% 8px 15% 8px;
+			transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+		}
+		.cecan:hover {
+			border-radius: 8px 15% 8px 15%;
+		}
+		.cecan .foto {
+			display: block;
+			margin: 0px auto;
+			margin-bottom: 4px;
+			padding: 0px;
+			width: 235px;
+			height: 235px;
+			object-fit: cover;
+			border: 0px;
+			border-radius: 50%;
+			transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			box-shadow: 0px 0px 4px #555;
+			-o-box-shadow: 0px 0px 4px #555;
+			-webkit-box-shadow: 0px 0px 4px #555;
+		}
+		.foto:hover {
+			margin-bottom: 10px;
+			border-radius: 4px 15% 4px 15%;
+		}
+		.cecan b {
+			color: #3169B3;
+			font-size: 16px;
+			font-family: "Nunito", sans-serif;
+		}
+		.cecan p {
+			display: inline-block;
+			margin: 0px;
+			color: #3169B3;
+			font-size: 14px;
+			font-weight: normal;
+			font-family: "Hind", sans-serif;
+		}
+		.cecan .love {
+			display: block;
+			width: 200px;
+			margin: 0px auto;
+			padding: 6px 6px;
+			font-size: 18px;
+			color: #fff;
+			background: #3169B3;
+			border: 0px;
+			border-radius: 15px;
+			outline: 0px;
+			transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			box-shadow: 0px 0px 4px #999;
+			-o-box-shadow: 0px 0px 4px #999;
+			-webkit-box-shadow: 0px 0px 4px #999;
+		}
+		.love:hover {
+			color: whitesmoke;
+			background: pink;
+			border-radius: 6px 15px 6px 15px;
+		}
+		.pict {
+			display: block;
+			margin: 0px auto;
+			padding: 0px;
+			width: 320px;
+			height: 320px;
+			object-fit: cover;
+			border: 2px solid #3169B3;
+			border-radius: 9px;
+		}
+		.nama {
+			margin: 6px;
+			text-align: center;
+			color: #3169B3;
+			font-size: 16px;
+			font-weight: 600;
+			font-family: "Nanum+Gothic", sans-serif;
+		}
+		.slides p {
+			margin: 0px;
+			text-align: center;
+			color: #3169B3;
+			font-size: 14px;
+			font-weight: normal;
+			font-family: "Hind", sans-serif;
+		}
+		.dot {
+			display: inline-block;
+			margin: 0px 2px;
+			width: 6px;
+			height: 6px;
+			background: #999;
+			transition: background-color 0.3s ease;
+			border-radius: 50%;
+		}
+		.active {
+			background: darkcyan;
+		}
+		.fade {
+			animation-name: fade;
+			-o-animation-name: fade;
+			-webkit-animation-name: fade;
+			animation-duration: 0.5s;
+			-o-animation-duration: 0.5s;
+			-webkit-animation-duration: 0.5s;
+		}
+		@-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+		@-o-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+		@keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+		</style>
+		</head>
+		
+		<body>
+			<br/><br/>
+			<div class="slides fade">
+				<img src="Cecan/Virania.jpg" class="pict">
+				<div class="nama">Virania</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 45</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Kikiaprilia.jpg" class="pict">
+				<div class="nama">Kiki Aprillia</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 21</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Aullea.jpg" class="pict">
+				<div class="nama">Aul Lea</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 20</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Rosainica.jpg" class="pict">
+				<div class="nama">Rosainica Margy Naviri Kamoe</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 19</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Yusan.jpg" class="pict">
+				<div class="nama">Yusan Charoline</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 15</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Mustika.jpg" class="pict">
+				<div class="nama">Mustika</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 14</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Silva.jpg" class="pict">
+				<div class="nama">Silva Khoerunnisa</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 14</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Nurhutami.jpg" class="pict">
+				<div class="nama">Nur Hutami</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 13</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Winda.jpg" class="pict">
+				<div class="nama">Winda Anggelina</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 13</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Kokoro.jpg" class="pict">
+				<div class="nama">Iin</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 12</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Anggi.jpg" class="pict">
+				<div class="nama">Anggi Rizky Nauly Harahap</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 11</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Rhoalatte.jpg" class="pict">
+				<div class="nama">Roro</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 10</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Widad.jpg" class="pict">
+				<div class="nama">Widad Fadhila</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 8</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Pika.jpg" class="pict">
+				<div class="nama">Pika</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 8</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Alda.jpg" class="pict">
+				<div class="nama">Alda Novitasari</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 8</p>
+			</div>
+			
+			<div class="slides fade">
+				<img src="Cecan/Icha.jpg" class="pict">
+				<div class="nama">Icha</div>
+				<p><i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> Suka: 7</p>
+			</div>
+			
+			<div style="text-align: center;">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span> 
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span> 
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span> 
+			</div>
+			
+			<input type="text" class="cari" id="cari" onkeyup="Pencarian()" onclick="getar(100);cari()" placeholder="Cari nama Cecan...">
+			<div id="body">
+			<form method="post" action="Cecan/votting.php">
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 45%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Kiki Aprilkia')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Aul Lea')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Virania')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Icha')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Anggi Rizky Nauly Harahap')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Mustika')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Yusan Charoline')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Widad Fadhila')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Roro')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Nur Hutami')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Iin')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Pika')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Alda Novitasari')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Silva Khoerunnisa')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Winda Anggelina')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			
+			<li>
+			<div class="cecan">
+				<img class="foto" src=".nonmedia" onclick="foto()">
+					<i class="material-icons" style="font-size: 18px; color: #3169B3; vertical-align: top;">face</i> <b><!-- --></b>
+					<hr style="width: 40%; margin-bottom: 0px; size: 1px; color: #777;">
+					<i class="fa fa-thumbs-o-up" style="color: #3169B3"></i> <p>Suka: <bdo class="suka"></bdo><i class="fa fa-spinner fa-spin" style="margin-left: 5px; color: #3169B3"></i></p>
+					<br/>
+					<button class="love" id="like01" onclick="suka();getar(200);alert('Suka: Rosainica Margy Naviri Kamoe')"><i class="fa fa-heart"></i></button>
+			</div>
+			</li>
+			</form>
+			</div>
+			
+			<br/>
+			
+			&nbsp;&nbsp;<sup>Terakhir diupdate: Selasa, 05-Mei-2020, 10.50</sup>
+			
+			<p style="top: 0px; right: 0px; margin: 4px; font-size: small; position: fixed; z-index: 10;">©Hardiansyah</p>
+			
+			<br/><br/><br/><br/>
+			
+			<audio src="Cecan/suka.m4a" type="audio/m4a" id="suka0"></audio>
+			<audio src="Cecan/foto.m4a" type="audio/m4a" id="foto0"></audio>
+			<audio src="Cecan/cari.m4a" type="audio/m4a" id="cari0"></audio>
+		<script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 2000);
+		}
+		</script>
+		<script type="text/javascript">
+		function suka() {
+		var audio = document.getElementById("suka0");
+			audio.play();
+		}
+		function foto() {
+		var audio = document.getElementById("foto0");
+			audio.play();
+		}
+		function cari() {
+		var audio = document.getElementById("cari0");
+			audio.play();
+		}
+		</script>
+		<script type="text/javascript">
+		function Pencarian() {
+			var input, filter, div, li, b, txtValue;
+			input = document.getElementById('cari');
+			filter = input.value.toUpperCase();
+			div = document.getElementById("body");
+			li = div.getElementsByTagName('li');
+			for (i = 0; i < li.length; i++) {
+				b = li[i].getElementsByTagName("b")[0];
+				txtValue = b.textContent || b.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+			}}}
+		</script>
+		<script>
+			function getar(pola) {
+				var gtr = window.navigator.vibrate(pola);
+				console.log(gtr);
+			}
+		</script>
+		<script src="Cecan/Query.js" type="text/javascript"></script>
+	</body>
+</html>
